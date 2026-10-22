@@ -1,0 +1,122 @@
+:root{--navy:#0b1f3a;--navy2:#12305a;--gold:#c9a24b;--gold2:#e8d49a;--goldd:#7a5a12;--mist:#f3f6fa;--mut:#4d5d77;--line:#dde5ef;--wa:#148a48;--sh:0 14px 40px rgba(11,31,58,.12)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font:16px/1.65 "Nunito Sans",system-ui,sans-serif;color:var(--navy);background:#fff}
+h1,h2,h3,.price{font-family:"Bricolage Grotesque","Nunito Sans",sans-serif;line-height:1.1}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1160px;margin:auto;padding:0 20px}
+.sec{padding:84px 0}.mist{background:var(--mist)}.dark{background:var(--navy);color:#fff}
+h2{font-size:clamp(1.9rem,4.6vw,2.8rem);letter-spacing:-.02em;margin-bottom:12px}
+.sub{color:var(--mut);max-width:62ch;margin-bottom:34px}.dark .sub{color:#b9c8de}
+.i{width:1.25em;height:1.25em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:50px;padding:12px 26px;border-radius:999px;font:700 1rem "Nunito Sans",sans-serif;text-decoration:none;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,0,0,.22)}
+.btn:disabled{opacity:.7;cursor:wait;transform:none}
+.gold{background:var(--gold);color:var(--navy)}.gold:hover{background:var(--gold2)}
+.wa{background:var(--wa);color:#fff}
+/* Header + brand */
+.top{position:sticky;top:0;z-index:50;background:var(--navy);color:#fff;border-bottom:1px solid rgba(201,162,75,.35)}
+.bar{display:flex;align-items:center;gap:18px;min-height:76px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.logo-badge{display:grid;place-items:center;flex:none;padding:4px;overflow:hidden;border:1px solid var(--gold);border-radius:50%;background:#fff;box-shadow:0 3px 12px rgba(0,0,0,.2)}
+.mark{width:56px;height:56px}
+.logo-image{display:block;width:100%;height:100%;object-fit:contain;border-radius:50%}
+.bn b{display:block;font:800 clamp(.9rem,2.7vw,1.12rem)/1.1 "Bricolage Grotesque",sans-serif;letter-spacing:.07em;text-transform:uppercase}
+.bn small{color:var(--gold2);font-size:.8rem}
+#menu{display:flex;gap:26px}
+#menu a{color:#d4e0f1;text-decoration:none;font-weight:600;padding:6px 0;border-bottom:2px solid transparent}
+#menu a:hover{color:#fff;border-color:var(--gold)}
+.act{display:flex;gap:10px;align-items:center}.act .btn{min-height:46px;padding:10px 20px}
+.burger{display:none;width:46px;height:46px;border:1px solid rgba(255,255,255,.3);border-radius:12px;background:none;cursor:pointer}
+.burger i,.burger i::before,.burger i::after{display:block;width:20px;height:2px;background:#fff;position:relative;margin:auto}
+.burger i::before,.burger i::after{content:"";position:absolute;left:0}.burger i::before{top:-6px}.burger i::after{top:6px}
+/* Hero */
+.hero{background:var(--navy);color:#fff;padding:64px 0 84px;overflow:hidden}
+.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.hl{min-width:0}
+.lock{--x:clamp(5.6rem,13vw,8.6rem);display:flex;align-items:center;gap:clamp(14px,2.4vw,26px)}
+.hero-logo{width:clamp(116px,14vw,156px);height:clamp(116px,14vw,156px)}
+.nm{font-size:calc(var(--x)*.21);line-height:1.18;letter-spacing:.24em;text-transform:uppercase;font-weight:800}
+.tag{margin:22px 0 28px;font:italic 500 1.25rem Fraunces,Georgia,serif;color:var(--gold2)}
+.tag span{font:600 .95rem "Nunito Sans",sans-serif;color:#fff;margin-left:12px;padding-left:14px;border-left:1px solid rgba(255,255,255,.4)}
+.head{font:800 clamp(1.9rem,4vw,2.7rem)/1.08 "Bricolage Grotesque",sans-serif;letter-spacing:-.025em;margin-bottom:16px;max-width:20ch}
+.offer{display:flex;flex-wrap:wrap;gap:.15em .8em;max-width:100%;width:max-content;margin:0 0 20px;padding:14px 18px;border:1px solid var(--gold2);border-radius:12px;background:var(--gold);color:var(--navy);font:800 clamp(1rem,2.3vw,1.22rem)/1.25 "Bricolage Grotesque","Nunito Sans",sans-serif;letter-spacing:.02em;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.offer span{white-space:nowrap}
+.lead{color:#c3d1e6;max-width:52ch;margin-bottom:22px;font-size:1.06rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.visit-note{margin-top:12px;color:var(--gold2);font-size:.94rem;font-weight:700}
+.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.chips li{font-size:.9rem;color:#dbe6f5;padding:6px 14px;border:1px solid rgba(255,255,255,.22);border-radius:999px}
+.chips li::before{content:"✓";color:var(--gold);font-weight:800;margin-right:7px}
+.hl>*{animation:up .7s both}.hl>:nth-child(2){animation-delay:.08s}.hl>:nth-child(3){animation-delay:.16s}.hl>:nth-child(4){animation-delay:.24s}.hl>:nth-child(5){animation-delay:.32s}.hl>:nth-child(6){animation-delay:.4s}
+@keyframes up{from{opacity:0;transform:translateY(16px)}}
+.frame{position:relative}
+.frame::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:2px solid var(--gold);border-radius:32px}
+.hero-ph{position:relative;aspect-ratio:4/5;border-radius:30px;box-shadow:var(--sh)}
+.ph{position:relative;overflow:hidden;background:#dde6f1;border-radius:22px}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.ph.is-broken{background:linear-gradient(135deg,var(--navy2),var(--navy))}
+.ph.is-broken img{display:none}
+.ph.is-broken::after{content:"AJ";position:absolute;inset:0;display:grid;place-items:center;font:800 4rem "Bricolage Grotesque",sans-serif;color:rgba(201,162,75,.55)}
+.mos{display:grid;gap:14px;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:230px 230px}
+.mos .ph:first-child{grid-row:span 2}.mos .ph:last-child{grid-column:2/4}
+.mos .ph::before{content:"";position:absolute;inset:auto 0 0;height:50%;z-index:1;background:linear-gradient(transparent,rgba(11,31,58,.72))}
+.cap{position:absolute;left:16px;bottom:12px;z-index:2;color:#fff;font:700 1rem "Bricolage Grotesque",sans-serif}
+/* Rooms */
+.notice{background:#fbf3dc;border:1px solid #ecd699;border-left:5px solid var(--gold);border-radius:14px;padding:14px 18px;margin-bottom:28px;font-size:.96rem;color:var(--navy)}
+.rooms{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:20px;align-items:stretch}
+.card{min-width:0;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--sh);display:flex;flex-direction:column;transition:transform .25s}
+.card:hover{transform:translateY(-3px)}
+.pad{padding:22px;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:1.35rem;line-height:1.2;margin-bottom:12px;min-height:2.4em}
+.price{font-size:2rem;font-weight:800;margin-bottom:14px;min-height:1.2em}
+.price small{font:600 .88rem "Nunito Sans",sans-serif;color:var(--mut)}
+.card ul{list-style:none;padding:0;margin:14px 0 22px;color:var(--mut);display:grid;gap:7px;flex:1}
+.card li::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--gold);margin-right:10px}
+.card .btn{width:100%;margin-top:auto;background:var(--navy);color:#fff}.card .btn:hover{background:var(--navy2)}
+/* Facilities */
+.fac{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.f{display:flex;gap:16px;padding:22px;border:1px solid rgba(255,255,255,.14);border-radius:18px;transition:background .2s,border-color .2s}
+.f:hover{background:rgba(255,255,255,.05);border-color:var(--gold)}
+.ic{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:rgba(201,162,75,.15);color:var(--gold);flex:none;font-size:1.2rem}
+.f b{display:block;font-size:1.05rem}.f small{color:#b9c8de;font-size:.92rem}
+/* Enquiry form */
+.eg2{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:start}
+.aside{background:var(--navy);color:#fff;border-radius:28px;padding:34px}
+.aside h2{font-size:2rem}.aside p{color:#c3d1e6;margin-bottom:18px}
+form{display:grid;gap:18px;background:#fff;border:1px solid var(--line);border-radius:28px;padding:32px;box-shadow:var(--sh)}
+.two{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+label{font-weight:700;font-size:.93rem;display:block;margin-bottom:6px}
+input,select{width:100%;font:inherit;padding:12px 14px;min-height:50px;border:1.5px solid #b9c7d9;border-radius:12px;background:#fff;color:var(--navy)}
+input:focus,select:focus{border-color:var(--navy);outline:3px solid rgba(201,162,75,.45);outline-offset:0}
+input[aria-invalid=true],select[aria-invalid=true]{border-color:#c0392b}
+.err{color:#b0281b;font-size:.85rem;min-height:1.2em;margin-top:3px}
+.hp{position:absolute;left:-9999px}
+#msg{padding:14px 16px;border-radius:12px;display:none;font-weight:600}
+#msg.ok{display:block;background:#e3f6ec;color:#11633a}#msg.bad{display:block;background:#fdeaea;color:#9a2218}#msg.pending{display:block;background:#fff6dc;color:var(--navy)}
+/* FAQ + contact */
+details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:0 22px;margin-bottom:12px}
+summary{font-weight:700;cursor:pointer;padding:18px 0;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--goldd);font-size:1.5rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--mut);padding-bottom:18px}
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.ci{display:flex;gap:16px;padding:24px;background:#fff;border:1px solid var(--line);border-radius:20px}
+.ci .ic{background:var(--navy);width:46px;height:46px}.ci b{display:block}.ci span,.ci a{color:var(--mut)}.ci #addr[href]{display:inline-block;color:var(--goldd);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:3px;font-weight:700;cursor:pointer;transition:color .2s,text-decoration-thickness .2s}.ci #addr[href]:hover{color:var(--navy);text-decoration-thickness:2px}
+.map{margin-top:20px;border:0;width:100%;height:340px;border-radius:24px}
+footer{background:var(--navy);color:#b9c8de;padding:50px 0 104px;font-size:.93rem}
+.fg{display:flex;flex-wrap:wrap;gap:28px 60px;justify-content:space-between;align-items:center}
+.fg nav{display:flex;flex-wrap:wrap;gap:8px 22px}.fg nav a{color:#fff;text-decoration:none;font-weight:600}
+.fine{margin-top:26px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);max-width:82ch}
+.fab{position:fixed;right:16px;bottom:16px;z-index:40;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+@media(max-width:900px){
+.burger{display:block}
+#menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--navy2);padding:6px 20px 14px}
+#menu.open{display:flex}#menu a{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.hg{grid-template-columns:1fr;gap:48px}.hero-ph{aspect-ratio:4/3}.frame::before{inset:12px -10px -12px 10px}
+.eg2{grid-template-columns:1fr}.sec{padding:60px 0}.hero{padding:44px 0 64px}}
+@media(max-width:520px){.bar{gap:10px}.brand{gap:8px}.mark{width:48px;height:48px}.hero-logo{width:104px;height:104px}.lock{gap:12px}.nm{font-size:1.18rem;letter-spacing:.18em}.offer{gap:6px 12px;padding:12px 14px;font-size:1rem}.cta{flex-direction:column}.cta .btn{width:100%}.rooms{grid-template-columns:1fr;gap:14px}.pad{padding:20px}.card h3{min-height:0;margin-bottom:8px}.price{font-size:1.85rem;margin-bottom:10px;min-height:0}.card ul{margin:10px 0 18px}.act .btn span{display:none}.act .btn{padding:0;width:46px}form{padding:22px}.aside{padding:26px}.tag span{display:block;margin:6px 0 0;padding:0;border:0}}
+@media(max-width:700px){.mos{grid-template-columns:1fr 1fr;grid-template-rows:200px 150px 150px}.mos .ph:first-child{grid-column:span 2;grid-row:auto}.mos .ph:last-child{grid-column:1/-1}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
